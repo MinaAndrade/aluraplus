@@ -11,7 +11,7 @@ body {
     background-color: var(--cor-de-fundo);
     color: var(--branco-principal);
     font-family: var(--fonte-principal);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
 }
 
@@ -39,7 +39,7 @@ body {
 }
 
 .container__titulo {
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 700;
 }
 
@@ -68,7 +68,7 @@ body {
 }
 
 .container__aviso {
-    font-size: 12px;
+    font-size: 0.75rem;
     color: var(--cinza-secundario);
 }
 
@@ -83,7 +83,7 @@ body {
 
 .descricao__titulo {
     font-weight: 700;
-    font-size: 48px;
+    font-size: 3rem;
     color: var(--branco-principal);
     margin-bottom: 0.1em;
 }
@@ -114,11 +114,11 @@ body {
 }
 
 .dispositivos__titulo {
-    font-size: 48px;  
+    font-size: 3rem;  
 }
 
 .lista__item {
-    font-size: 32px;
+    font-size: 2rem;
 }
 
 .rodape {
@@ -149,6 +149,87 @@ body {
 
 .rodape__texto {
     color: var(--cinza-secundario);
-    font-size: 14px;
+    font-size: 0.875rem;
     margin: 1em 0;
+}
+
+@media (max-width: 900px) {
+    body {
+        width: auto;
+    }
+
+    .principal {
+        display: flex;
+        justify-content: center;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .container {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container__aviso {
+        font-size: 0.75rem;
+        color: var(--cinza-secundario);
+    }
+
+    .secundario {
+        margin: 0 2em;
+        display: flex;
+        gap: 2em;
+        flex-direction: column-reverse;
+    }
+
+    .secundario__imagem {
+        width: 90%;
+    }
+    
+    .descricao__titulo {
+        font-size: 2.2rem;
+        margin-bottom: 0.2em;
+    }
+
+    .container__descricao {
+        padding: 1em;
+    }
+
+    .dispositivos__lista {
+        flex-direction: column;
+        margin: 1.5em 0;
+    }
+
+    .dispositivos__lista img {
+        width: 50%;
+    }
+
+    .dispositivos__titulo {
+        font-size: 2.2rem;  
+    }
+
+    .lista__item {
+        font-size: 1.6rem;
+    }
+
+    .rodape {
+        margin: 3em 1em 1em 1em;
+    }
+
+    .rodape__logo {
+        width: 20%;
+    }
+
+    .rodape__lista {
+        display: grid;
+        margin: 1.2em 0;
+        font-size: 0.75rem;
+    }
+
+    .rodape__texto {
+        font-size: 0.625rem;
+        margin: 0.5em 0;
+    }
 }
